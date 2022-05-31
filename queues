@@ -1,0 +1,23 @@
+package main
+
+type Queue struct {
+	slice[] int
+}
+//enqueue adds int to back of queue
+
+func (q *Queue) Enqueue (i int) {
+// add i to queue
+}
+
+// dequeque returns the first item in the queue or panics if there isn't one
+
+func (q *Queue) Dequeque() int {
+	ret := q.slice[0]
+	q.slice = q.slice[1:len(q.slice)]
+	return ret
+}
+
+func main() {
+	var q *Queue = new(Queue)
+	q.Enqueque(123)
+	
